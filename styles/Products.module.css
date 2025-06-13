@@ -1,0 +1,130 @@
+.products {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #228B22;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #228B22, #FFD700);
+  border-radius: 2px;
+}
+
+.plus {
+  color: #FFD700;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.productCard {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+  border: 3px solid transparent;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.productCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.productCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  border-color: #FFD700;
+}
+
+.productIcon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #228B22, #32CD32);
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.productCard h3 {
+  font-size: 1.5rem;
+  color: #228B22;
+  margin-bottom: 1rem;
+}
+
+.productCard p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.productFeatures {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.productFeatures li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.productFeatures li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #228B22;
+  font-weight: bold;
+}
+
+.productButton {
+  background: linear-gradient(135deg, #228B22, #32CD32);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.productButton:hover {
+  background: linear-gradient(135deg, #32CD32, #228B22);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+}
