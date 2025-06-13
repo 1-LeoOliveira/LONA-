@@ -48,51 +48,53 @@
   height: fit-content;
 }
 
-.mapInfo h3 {
+.addressCard h3 {
   color: #228B22;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
 }
 
-.addressInfo {
+.address {
+  color: #666;
   margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-.addressItem {
+.scheduleInfo {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
 }
 
-.addressIcon {
-  width: 50px;
-  height: 50px;
+.scheduleIcon {
+  width: 40px;
+  height: 40px;
   background: linear-gradient(135deg, #228B22, #32CD32);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
   flex-shrink: 0;
+  font-size: 1.2rem;
 }
 
-.addressItem strong {
+.scheduleInfo strong {
   color: #228B22;
   display: block;
   margin-bottom: 0.25rem;
 }
 
-.addressItem p {
+.scheduleInfo p {
   color: #666;
-  white-space: pre-line;
 }
 
 .directionsBtn {
   background: linear-gradient(135deg, #228B22, #32CD32);
   color: white;
-  padding: 15px 25px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 50px;
+  border-radius: 25px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -109,10 +111,6 @@
   background: linear-gradient(135deg, #32CD32, #228B22);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(34, 139, 34, 0.4);
-}
-
-.directionsIcon {
-  font-size: 1.2rem;
 }
 
 .mapContainer {
@@ -132,12 +130,12 @@
     height: 300px;
   }
   
-  .addressItem {
+  .scheduleInfo {
     flex-direction: row;
   }
   
-  .addressIcon {
-    width: 40px;
-    height: 40px;
+  .scheduleIcon {
+    width: 35px;
+    height: 35px;
   }
 }

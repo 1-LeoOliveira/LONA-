@@ -58,75 +58,7 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.ctaButton {
-  background: #FFD700;
-  color: #228B22;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255,215,0,0.3);
-}
-
-.ctaButton:hover {
-  background: #FFA500;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255,215,0,0.4);
-}
-
-.floatingElements {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-}
-
-.floatingElement {
-  position: absolute;
-  opacity: 0.1;
-  animation: float 6s ease-in-out infinite;
-}
-
-.flag {
-  top: 10%;
-  left: 10%;
-  font-size: 3rem;
-}
-
-.star {
-  top: 20%;
-  right: 15%;
-  font-size: 2rem;
-  animation-delay: -2s;
-}
-
-.shield {
-  bottom: 20%;
-  left: 20%;
-  font-size: 2.5rem;
-  animation-delay: -4s;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.5rem;
-  }
-}
-
+/* Botão WhatsApp - Estilo da imagem */
 .whatsappButton {
   background: #25D366;
   border: none;
@@ -183,46 +115,6 @@
   transform: rotate(10deg);
 }
 
-/* Ícone do card (emoji) */
-.whatsappIconCard {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
-/* Para telas menores */
-@media (max-width: 768px) {
-  .whatsappButtonContent {
-    padding: 14px 20px;
-    gap: 10px;
-  }
-  
-  .whatsappText {
-    font-size: 15px;
-  }
-  
-  .whatsappIcon {
-    width: 36px;
-    height: 36px;
-  }
-}
-
 /* Animação de ripple ao clicar */
 .whatsappButton::before {
   content: '';
@@ -243,22 +135,66 @@
   height: 300px;
 }
 
-/* Benefícios simplificados */
-.whatsappBenefits {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 2rem;
+.floatingElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
 }
 
-.benefitItem {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
+.floatingElement {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 6s ease-in-out infinite;
 }
 
-.benefitIcon {
-  font-size: 1.1rem;
+.flag {
+  top: 10%;
+  left: 10%;
+  font-size: 3rem;
+}
+
+.star {
+  top: 20%;
+  right: 15%;
+  font-size: 2rem;
+  animation-delay: -2s;
+}
+
+.shield {
+  bottom: 20%;
+  left: 20%;
+  font-size: 2.5rem;
+  animation-delay: -4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .whatsappButtonContent {
+    padding: 14px 20px;
+    gap: 10px;
+  }
+  
+  .whatsappText {
+    font-size: 15px;
+  }
+  
+  .whatsappIcon {
+    width: 36px;
+    height: 36px;
+  }
 }
